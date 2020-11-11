@@ -14,7 +14,7 @@ m.weight = torch.nn.Parameter(torch.normal(mean=torch.zeros_like(m.weight),
                                             std=torch.ones_like(m.weight)*std_normal))
 ```
 
-However, as mentioned in the paper https://arxiv.org/abs/1910.05396, we don't use the image convolved with random filters. Instead we do blending as suggested 
+However, as mentioned in the paper https://arxiv.org/abs/1910.05396, training only randomised inputs complicates training. Therefore, we do blending as suggested 
 
 ![blending](images_for_readme/clean_init.jpg)
 

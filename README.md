@@ -63,3 +63,8 @@ FLAGS
     --save_images=SAVE_IMAGES
 (END)
 ```
+# Results 
+
+Running with a kernel size of 3 and alpha 0.7 gives 
+
+![k=3,alpha=0.7](images_for_readme/rand_conv.gif)

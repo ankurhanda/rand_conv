@@ -30,7 +30,7 @@ def do_rand_conv(kernel_size=3,
     read the image here
     '''
     # img_path = 'images/glasses.jpg'
-    img_path = 'images/20.png'
+    img_path = 'images/robot.jpg'
 
     # read the images as byte i.e. values are [0, 255]
     image = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB)

@@ -5,12 +5,15 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import fire 
+import pprint
+
 
 
 def do_rand_conv(kernel_size=3,
                 weight_init='normal',
                 alpha=0.7,
                 save_images=False):
+
     """
     A function to apply random convolution filters to the image\
     input (H x W x 3) ->rand_conv-> output (H x W x 3)\n
@@ -22,10 +25,11 @@ def do_rand_conv(kernel_size=3,
 
     """
 
-    print('running with settings kernel_size = {}, weight_init = {}, alpha = {}, save_images = {}'.format(kernel_size,
-                                                                                        weight_init,
-                                                                                        alpha, 
-                                                                                        save_images))
+    # pretty print the values of the commandline arguments 
+    print('running the function with the following settings  ')
+    pprint.pprint(locals(), width=1)
+    print('....')
+    
     '''
     read the image here
     '''

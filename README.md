@@ -29,6 +29,7 @@ Install the following via pip
 ```
 fire
 matplotlib
+pprintpp
 torch
 ```
 

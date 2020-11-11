@@ -2,7 +2,7 @@ This repo shows how to create on-demand random colour augmentations by convolvin
 
 # rand_conv
 
-The filter weights are initialised from a normal distribution with standard deviation of 1 / sqrt(C_in) * kernel_size
+The filter weights are initialised from a normal distribution with standard deviation of 1 / sqrt(C_in) * kernel_size. Since we are dealing with 3 channel input images C_in is 3 and we also want output to be 3 channel.
 
 ```
     std_normal = 1 / (np.sqrt(3) * kernel_size)

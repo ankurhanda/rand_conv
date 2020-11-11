@@ -28,18 +28,16 @@ It will show you the following help for commandline arguments
 
 ```
 NAME
-    rand_conv.py - A function to apply random convolution filters to the image i.e. input (H x W x 3) ->rand_conv-> output (H x W x 3)
+    rand_conv.py - A function to apply random convolution filters to the image 
+                   input (H x W x 3) ->rand_conv-> output (H x W x 3)
 
 SYNOPSIS
     rand_conv.py <flags>
 
 DESCRIPTION
     @param: kernel_size is the size of the convolution filter to be used 
-
     @param: weight_init is the initalisation scheme (whether it's normal or xavier etc.) 
-
     @param: alpha is the blending parameter i.e. alpha*input_image + (1-alpha)*convolved_image 
-
     @param: save_images is for saving the blended images
 
 FLAGS
@@ -47,5 +45,5 @@ FLAGS
     --weight_init=WEIGHT_INIT
     --alpha=ALPHA
     --save_images=SAVE_IMAGES
-
+(END)
 ```

@@ -1,0 +1,1 @@
+This repo shows how to create on-demand random colour augmentations by convolving the image with random conv2d filters.

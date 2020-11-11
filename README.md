@@ -14,6 +14,10 @@ The filter weights are initialised from a normal distribution with standard devi
                                                std=torch.ones_like(m.weight)*std_normal))
 ```
 
+However, as mentioned in the paper https://arxiv.org/abs/1910.05396, we don't use the image convolved with random filters. Instead we do blending as suggested 
+
+![blending](images_for_readme/clean_init.jpg)
+
 # Dependencies
 
 Install the following via pip

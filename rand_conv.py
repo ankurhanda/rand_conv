@@ -56,8 +56,11 @@ def do_rand_conv(kernel_size=3,
 
     # loop for random conv filter 
     for i in range(0, 1000):
-
-        std_normal = 1 / (np.sqrt(3) * kernel_size)
+        
+        if weight_init == 'normal':
+            std_normal = 1 / (np.sqrt(3) * kernel_size)
+        elif weight_init == 'xavier':
+            std_normal = 1 / np.sqrt(3) # fan_in and fan_out are 3 so 2 / 3 + 3 = 1/3
 
         m.weight = torch.nn.Parameter(torch.normal(mean=torch.zeros_like(m.weight), 
                                                 std=torch.ones_like(m.weight)*std_normal))

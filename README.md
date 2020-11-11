@@ -14,7 +14,15 @@ The filter weights are initialised from a normal distribution with standard devi
                                                std=torch.ones_like(m.weight)*std_normal))
 ```
 
+# Dependencies
 
+Install the following via pip
+
+```
+fire
+matplotlib
+torch
+```
 
 # How to run 
 

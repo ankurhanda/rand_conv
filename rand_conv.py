@@ -12,8 +12,8 @@ def do_rand_conv(kernel_size=3,
                 alpha=0.7,
                 save_images=False):
     """
-    A function to apply random convolution filters to the image \\
-    input (H x W x 3) ->rand_conv-> output (H x W x 3)
+    A function to apply random convolution filters to the image\
+    input (H x W x 3) ->rand_conv-> output (H x W x 3)\n
 
     @param: kernel_size is the size of the convolution filter to be used 
     @param: weight_init is the initalisation scheme (whether it's normal or xavier etc.) 

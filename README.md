@@ -28,7 +28,7 @@ It will show you the following help for commandline arguments
 
 ```
 NAME
-    rand_conv.py - #Parameters:
+    rand_conv.py - A function to apply random convolution filters to the image i.e. input (H x W x 3) ->rand_conv-> output (H x W x 3)
 
 SYNOPSIS
     rand_conv.py <flags>

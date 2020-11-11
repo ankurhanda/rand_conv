@@ -1,17 +1,17 @@
 # rand_conv
 
-This repo shows how to create on-demand random colour augmentations by convolving the image with random conv2d filters.
+This repo shows how to create on-demand random colour augmentations by convolving the image with random conv2d filters. This has shown to improve the performance in RL as well as image classification by https://arxiv.org/abs/1910.05396 and https://openreview.net/pdf?id=BVSM0x3EDK6
 
 The filter weights are initialised from a normal distribution with standard deviation of 1 / sqrt(C_in) * kernel_size. Since we are dealing with 3 channel input images C_in is 3 and we also want output to be 3 channel.
 
 ```
-    # create the random_conv filter 
-    m = nn.Conv2d(3, 3, kernel_size, stride=1, padding=kernel_size//2, bias=False).cuda()
+# create the random_conv filter 
+m = nn.Conv2d(3, 3, kernel_size, stride=1, padding=kernel_size//2, bias=False).cuda()
 
-    std_normal = 1 / (np.sqrt(3) * kernel_size)
+std_normal = 1 / (np.sqrt(3) * kernel_size)
 
-    m.weight = torch.nn.Parameter(torch.normal(mean=torch.zeros_like(m.weight), 
-                                               std=torch.ones_like(m.weight)*std_normal))
+m.weight = torch.nn.Parameter(torch.normal(mean=torch.zeros_like(m.weight), 
+                                            std=torch.ones_like(m.weight)*std_normal))
 ```
 
 However, as mentioned in the paper https://arxiv.org/abs/1910.05396, we don't use the image convolved with random filters. Instead we do blending as suggested 

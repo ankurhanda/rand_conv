@@ -72,3 +72,7 @@ Running with --kernel_size=3 and --alpha=0.7
 Running with --kernel_size=3 and --alpha=0.3
 
 ![k=3,alpha=0.7](images_for_readme/rand_conv_k3_a0.3.gif)
+
+Running with --kernel_size=11 and --alpha=0.3
+
+![k=3,alpha=0.7](images_for_readme/rand_conv_k11_a3e-1.gif)

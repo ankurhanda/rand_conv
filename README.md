@@ -18,6 +18,10 @@ However, as mentioned in the paper https://arxiv.org/abs/1910.05396, training on
 
 ![blending](images_for_readme/clean_init.jpg)
 
+As shown in the paper https://openreview.net/pdf?id=BVSM0x3EDK6, varying the parameters (kernel size and the blending), we get a wide variety of augmentations
+
+![blending](images_for_readme/rand_conv_illus.jpg)
+
 # Dependencies
 
 Install the following via pip
